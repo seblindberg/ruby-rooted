@@ -5,6 +5,8 @@
 [![Inline docs](http://inch-ci.org/github/seblindberg/ruby-rooted.svg?branch=master)](http://inch-ci.org/github/seblindberg/ruby-rooted)
 [![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/gems/rooted/)
 
+Formerly known as 'rooted_tree'.
+
 This gem implements a _rooted, ordered tree_, but that name is a bit of a mouthful. It is ment to be used as a building block when working with any tree shaped data. For a brief recap of the terminology please see below. Please refer to https://en.wikipedia.org/wiki/Tree_structure for a more in depth description.
 
            A     A is the root.
