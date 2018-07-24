@@ -2,8 +2,8 @@
 
 require 'test_helper'
 
-describe RootedTree do
+describe Rooted do
   it 'has a version number' do
-    refute_nil ::RootedTree::VERSION
+    refute_nil ::Rooted::VERSION
   end
 end

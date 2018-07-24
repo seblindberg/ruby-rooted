@@ -1,9 +1,9 @@
-# 🌳 RootedTree
+# 🌳 Rooted
 
-[![Gem Version](https://badge.fury.io/rb/rooted_tree.png)](http://badge.fury.io/rb/rooted_tree)
-[![Build Status](https://travis-ci.org/seblindberg/ruby-rooted_tree.svg?branch=master)](https://travis-ci.org/seblindberg/ruby-rooted_tree)
-[![Inline docs](http://inch-ci.org/github/seblindberg/ruby-rooted_tree.svg?branch=master)](http://inch-ci.org/github/seblindberg/ruby-rooted_tree)
-[![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/gems/rooted_tree/)
+[![Gem Version](https://badge.fury.io/rb/rooted.png)](http://badge.fury.io/rb/rooted)
+[![Build Status](https://travis-ci.org/seblindberg/ruby-rooted.svg?branch=master)](https://travis-ci.org/seblindberg/ruby-rooted)
+[![Inline docs](http://inch-ci.org/github/seblindberg/ruby-rooted.svg?branch=master)](http://inch-ci.org/github/seblindberg/ruby-rooted)
+[![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/gems/rooted/)
 
 This gem implements a _rooted, ordered tree_, but that name is a bit of a mouthful. It is ment to be used as a building block when working with any tree shaped data. For a brief recap of the terminology please see below. Please refer to https://en.wikipedia.org/wiki/Tree_structure for a more in depth description.
 
@@ -18,7 +18,7 @@ This gem implements a _rooted, ordered tree_, but that name is a bit of a mouthf
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rooted_tree'
+gem 'rooted'
 ```
 
 And then execute:
@@ -27,7 +27,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install rooted_tree
+    $ gem install rooted
 
 ## Usage
 
@@ -35,23 +35,23 @@ Please see the documentation for the complete API.
 
 ```ruby
 # Create some nodes
-root = RootedTree::Node.new
-child_a = RootedTree::Node.new
-child_b = RootedTree::Node.new
+root = Rooted::Node.new
+child_a = Rooted::Node.new
+child_b = Rooted::Node.new
 
 # Put the two children below the root
 root << child_a << child_b
 
 # Look at the result
-p root # => RootedTree::Node:0x3fd5d54efda0
-       #    ├─╴RootedTree::Node:0x3fd5d54c3ea8
-       #    └─╴RootedTree::Node:0x3fd5d54ba894
+p root # => Rooted::Node:0x3fd5d54efda0
+       #    ├─╴Rooted::Node:0x3fd5d54c3ea8
+       #    └─╴Rooted::Node:0x3fd5d54ba894
 ```
 
 The gem is primarily ment to be extended by other classes. The following example builds a tree of the files in the file system and displays it much like the command line tool `tree`.
 
 ```ruby
-class FileSystemItem < RootedTree::Node
+class FileSystemItem < Rooted::Node
   def display
     inspect { |item| item.value }
   end
@@ -82,7 +82,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/rooted_tree.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/rooted.
 
 
 ## License

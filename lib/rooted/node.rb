@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RootedTree
+module Rooted
   # rubocop:disable Metrics/ClassLength
 
   # Nodes are mutable by default, since creating anyting but simple leafs would

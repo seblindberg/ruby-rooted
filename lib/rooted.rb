@@ -3,13 +3,13 @@
 require 'forwardable'
 require 'linked'
 
-require 'rooted_tree/version'
-require 'rooted_tree/mutable'
-require 'rooted_tree/node'
-require 'rooted_tree/tree'
+require 'rooted/version'
+require 'rooted/mutable'
+require 'rooted/node'
+require 'rooted/tree'
 
 # A basic implementation of a tree data structure.
-module RootedTree
+module Rooted
   class StructureException < StandardError; end
 
   private_constant :Mutable

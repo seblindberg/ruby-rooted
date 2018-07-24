@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rooted_tree (0.3.4)
+    rooted (0.3.4)
       linked (~> 0.1.1)
 
 GEM
@@ -45,7 +45,7 @@ DEPENDENCIES
   minitest (~> 5.0)
   rake (~> 10.0)
   redcarpet (~> 3.4)
-  rooted_tree!
+  rooted!
   rubocop (~> 0.52)
   simplecov (~> 0.16)
   yard (~> 0.9)

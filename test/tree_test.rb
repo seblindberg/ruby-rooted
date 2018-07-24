@@ -3,17 +3,17 @@
 require 'test_helper'
 
 class Treelike
-  include RootedTree::Tree
+  include Rooted::Tree
   attr_reader :root
 
   def initialize
-    @root = RootedTree::Node.new(:a)
-    @root << RootedTree::Node.new(:b)
-    @root << RootedTree::Node.new(:c)
+    @root = Rooted::Node.new(:a)
+    @root << Rooted::Node.new(:b)
+    @root << Rooted::Node.new(:c)
   end
 end
 
-describe RootedTree::Tree do
+describe Rooted::Tree do
   subject { Treelike.new }
 
   describe '#freeze' do

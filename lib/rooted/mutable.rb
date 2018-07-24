@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RootedTree
+module Rooted
   # This module contains methods for mutating a tree node.
   module Mutable
     # Insert a child between this node and the one after it.

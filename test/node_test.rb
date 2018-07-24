@@ -2,8 +2,8 @@
 
 require 'test_helper'
 
-describe RootedTree::Node do
-  subject { RootedTree::Node }
+describe Rooted::Node do
+  subject { Rooted::Node }
 
   let(:root) { subject.new }
   let(:child) { subject.new }
@@ -273,7 +273,7 @@ describe RootedTree::Node do
     end
 
     it 'raises an exception when adding siblings to root nodes' do
-      assert_raises(RootedTree::StructureException) do
+      assert_raises(Rooted::StructureException) do
         root.append_sibling subject.new
       end
     end
@@ -314,7 +314,7 @@ describe RootedTree::Node do
     end
 
     it 'raises an exception when adding siblings to root nodes' do
-      assert_raises(RootedTree::StructureException) do
+      assert_raises(Rooted::StructureException) do
         root.prepend_sibling subject.new
       end
     end
@@ -700,7 +700,7 @@ describe RootedTree::Node do
   describe '#+' do
     it 'fails to add nodes that are not roots' do
       root << child_a
-      assert_raises(RootedTree::StructureException) { child_a + child_b }
+      assert_raises(Rooted::StructureException) { child_a + child_b }
     end
 
     it 'adds two trees together under a new root' do

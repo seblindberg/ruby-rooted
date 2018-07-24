@@ -2,11 +2,11 @@
 
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rooted_tree/version'
+require 'rooted/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'rooted_tree'
-  spec.version       = RootedTree::VERSION
+  spec.name          = 'rooted'
+  spec.version       = Rooted::VERSION
   spec.authors       = ['Sebastian Lindberg']
   spec.email         = ['seb.lindberg@gmail.com']
 
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.description   = 'This gem implements a rooted, ordered tree, with a ' \
                        'focus on easy iteration over nodes and access to ' \
                        'basic tree properties.'
-  spec.homepage      = 'https://github.com/seblindberg/ruby-rooted_tree'
+  spec.homepage      = 'https://github.com/seblindberg/ruby-rooted'
   spec.license       = 'MIT'
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
