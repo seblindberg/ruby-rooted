@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.description   = 'This gem implements a rooted, ordered tree, with a ' \
                        'focus on easy iteration over nodes and access to ' \
                        'basic tree properties.' \
-                       "\n\n"
+                       "\n\n" \
                        'Formerly known as "rooted_tree".'
   spec.homepage      = 'https://github.com/seblindberg/ruby-rooted'
   spec.license       = 'MIT'
