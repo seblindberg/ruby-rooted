@@ -3,7 +3,6 @@
 require 'forwardable'
 require 'linked'
 
-require 'rooted/version'
 require 'rooted/mutable'
 require 'rooted/node'
 require 'rooted/tree'
